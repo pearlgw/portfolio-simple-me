@@ -1,0 +1,564 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	overflow-x: hidden;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #262632;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #434142;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #939472;
+}
+
+/*Navbar*/
+nav {
+	background-color: #191919;
+}
+
+nav .collapse li {
+	margin-left: 50px;
+}
+
+/*banner*/
+.jumbotron {
+	background-image: url(img/dark.jpg);
+	background-size: cover;
+	height: 700px;
+	color: white;
+}
+
+.jumbotron .content {
+	display: flex;
+	align-items: center;
+	height: 570px;
+	width: 100%;
+	text-align: center;
+}
+
+.jumbotron .content h1 {
+	overflow-y: hidden;
+	font-size: 60px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.jumbotron .content .garis1 {
+	width: 250px;
+	background-color: #fff;
+	margin-top: 0px;
+}
+
+.jumbotron .content h3 {
+	font-size: 25px;
+	overflow-y: hidden;
+}
+
+.jumbotron .content button {
+	margin-top: 20px;
+}
+
+/*About*/
+.about {
+	padding-top: 50px;
+	color: white;
+}
+
+.about .col-md-7 .judul-about {
+	font-size: 50px;
+}
+
+.about .col-md-7 .contnt {
+	text-align: justify;
+	padding-top: 20px;
+	font-size: 18.9px;
+	color: #dedede;
+}
+
+.about .col-md-5 img {
+	margin-left: 20px;
+	background-size: cover;
+	border: 15px solid #1d2630;
+	border-radius: 10px;
+}
+
+.about .garis-about {
+	width: 10%;
+	height: 2px;
+	background-color: #1d2630;
+}
+
+/* result */
+.result {
+	margin-top: 20px;
+	padding-top: 70px;
+}
+
+.result .judul-result {
+	font-size: 45px;
+	color: white;
+	text-align: center;
+}
+
+.result .garis-about {
+	width: 10%;
+	height: 2px;
+	background-color: #1d2630;
+	margin-top: 0px;
+}
+
+/*Ability*/
+.ability {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 70px 100px 0;
+	display: flex;
+	margin-top: 40px;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.ability .garis-about {
+	width: 10%;
+	height: 2px;
+	background-color: #1d2630;
+}
+
+.ability h3 {
+	color: white;
+	font-size: 50px;
+	text-align: center;
+}
+
+.ability .cntn {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.isi li {
+	position: relative;
+	list-style: none;
+	margin: 40px 0;
+	font-weight: 500;
+	/* text-transform: uppercase; */
+	color: white;
+	overflow-x: visible;
+}
+
+.isi li:before {
+	content: "";
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 0;
+	width: 100%;
+	height: 15px;
+	background-color: #434142;
+	border-radius: 1000px;
+}
+
+.isi li:after {
+	content: "";
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 0;
+	width: 0;
+	height: 15px;
+	background-color: #16202f;
+	border-radius: 2000px;
+	animation-duration: 10s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+li.html:after {
+	animation-name: html;
+}
+
+@keyframes html {
+	to {
+		width: 95%;
+	}
+}
+
+li.php:after {
+	animation-name: php;
+}
+
+@keyframes php {
+	to {
+		width: 75%;
+	}
+}
+
+li.csharp:after {
+	animation-name: csharp;
+}
+
+@keyframes csharp {
+	to {
+		width: 85%;
+	}
+}
+
+li.java:after {
+	animation-name: java;
+}
+
+@keyframes java {
+	to {
+		width: 70%;
+	}
+}
+
+li.mssql:after {
+	animation-name: mssql;
+}
+
+@keyframes mssql {
+	to {
+		width: 60%;
+	}
+}
+
+li.ui:after {
+	animation-name: ui;
+}
+
+@keyframes ui {
+	to {
+		width: 65%;
+	}
+}
+
+li.blogger:after {
+	animation-name: blogger;
+}
+
+@keyframes blogger {
+	to {
+		width: 75%;
+	}
+}
+
+.ability .smooth img {
+	width: 100%;
+	cursor: pointer;
+	filter: grayscale(100%);
+}
+
+.ability .smooth img:hover {
+	filter: grayscale(0%);
+}
+
+/* Achievement */
+.achievement {
+	padding: 70px 0 0;
+	margin-top: 50px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.achievement .judul-achievement {
+	text-align: center;
+}
+
+.achievement .judul-achievement h3 {
+	font-size: 45px;
+	color: white;
+}
+
+.achievement .garis-about {
+	width: 10%;
+	height: 2px;
+	background-color: #1d2630;
+	margin-top: 0px;
+}
+
+.achievement .grid .col-md-4 .card {
+	width: 21rem;
+}
+
+.achievement .grid .griddua {
+	margin-top: 50px;
+}
+
+.achievement .grid .gridsatu {
+	margin-top: 20px;
+}
+
+/* Footer */
+footer {
+	background-color: #1e1e1e;
+	color: #fff;
+	padding: 60px 0 0px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+footer .jdl {
+	font-size: 40px;
+	margin-bottom: -5px;
+}
+
+footer .footer-content h4 a {
+	margin-left: 1%;
+	margin-right: 1%;
+	color: white;
+}
+
+footer .footer-bottom {
+	justify-content: center;
+	padding: 10px 0;
+}
+
+footer .poter {
+	width: 100%;
+	background-color: white;
+	height: 1px;
+	margin-top: 40px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 991px) {
+	body::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Navbar */
+	nav .collapse li {
+		margin-left: 0px;
+	}
+
+	/* About */
+	.about .col-md-7 .contnt {
+		text-align: justify;
+		padding-top: 20px;
+		font-size: 15px;
+		color: #dedede;
+	}
+
+	.about .col-md-7 .judul-about {
+		font-size: 40px;
+	}
+
+	/* result */
+	.result {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+
+	.result .judul-result {
+		font-size: 40px;
+		color: white;
+		text-align: center;
+	}
+
+	/* achievement */
+	.achievement {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.achievement .judul-achievement h3 {
+		font-size: 40px;
+		color: white;
+	}
+
+	.achievement .grid .col-md-4 .card {
+		width: 100%;
+	}
+
+	.achievement .grid .col-md-4 .card h5 {
+		font-size: 17px;
+	}
+
+	/* ability */
+	.ability .cntn {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+
+	.ability h3 {
+		color: white;
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.ability .smooth img {
+		width: 100%;
+		cursor: pointer;
+		filter: grayscale(0%);
+	}
+
+	.ability .smooth img:hover {
+		filter: grayscale(0%);
+	}
+}
+
+@media screen and (max-width: 765px) {
+	body::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Navbar */
+	nav .collapse li {
+		margin-left: 0px;
+	}
+
+	/* jumbotron */
+	.jumbotron {
+		margin-top: 15px;
+	}
+
+	.jumbotron .content h1 {
+		font-size: 25px;
+	}
+
+	.jumbotron .content h3 {
+		font-size: 15px;
+	}
+
+	.jumbotron .content h6 {
+		font-size: 10px;
+	}
+
+	/* about */
+	.about .col-md-5 img {
+		margin-top: 40px;
+	}
+
+	.about .bg-about .col-md-7 h3 {
+		font-size: 25px;
+	}
+
+	/* result */
+	.result {
+		margin-top: -50px;
+		padding-top: 70px;
+	}
+
+	.result .grid .judul-result {
+		font-size: 25px;
+	}
+
+	/* achievement */
+	.achievement .grid .satu {
+		margin-top: 20px;
+	}
+
+	.achievement .grid .dua {
+		margin-top: 20px;
+	}
+
+	.achievement .grid .tiga {
+		margin-top: 20px;
+	}
+
+	.achievement .grid .empat {
+		margin-top: 20px;
+	}
+
+	.achievement .grid .lima {
+		margin-top: 20px;
+	}
+
+	.achievement .grid .enam {
+		margin-top: 20px;
+	}
+
+	.achievement .grid .griddua {
+		margin-top: 0px;
+	}
+
+	.achievement .grid {
+		margin-top: -30px;
+	}
+
+	.achievement {
+		margin-top: 0px;
+	}
+
+	.achievement .judul-achievement h3 {
+		font-size: 25px;
+	}
+
+	/* ability */
+	.ability .grid .cntn h3 {
+		font-size: 25px;
+	}
+
+	.ability .grid .cntn ul li {
+		font-size: 13px;
+	}
+
+	.ability .cntn {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+
+	.ability {
+		padding: 50px 25px 0;
+		margin-top: -30px;
+	}
+
+	.ability .smooth img {
+		width: 100%;
+	}
+
+	.ability .cntn ul {
+		margin-top: -30px;
+	}
+
+	.ability .cntn .garis-about {
+		margin-top: 0px;
+	}
+
+	/* footer */
+	footer .jdl {
+		font-size: 18px;
+	}
+
+	footer .pjls {
+		font-size: 13px;
+		margin-top: 5px;
+	}
+
+	footer .footer-bottom p {
+		font-size: 11px;
+	}
+
+	footer {
+		padding: 30px 0 0px;
+		margin-top: 0px;
+	}
+
+	footer .poter {
+		margin-top: 20px;
+	}
+}
